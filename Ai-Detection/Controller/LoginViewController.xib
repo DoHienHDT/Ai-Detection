@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MavenPro-Bold.ttf">
+            <string>MavenProBold</string>
+        </array>
+        <array key="MavenPro-Medium.ttf">
+            <string>MavenProMedium</string>
+        </array>
+        <array key="MavenPro-Regular.ttf">
+            <string>MavenProRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Ai_Detection" customModuleProvider="target">
+            <connections>
+                <outlet property="password" destination="zSt-Qn-hY3" id="GHG-vB-Wr5"/>
+                <outlet property="username" destination="3Np-c7-Fpf" id="qkY-sY-bF6"/>
+                <outlet property="view" destination="8xz-fj-C82" id="RIi-B3-gWi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8xz-fj-C82">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD4-Gb-ujZ" customClass="ShadowView" customModule="Login_Designs" customModuleProvider="target">
+                    <rect key="frame" x="40" y="200" width="464" height="559"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-UT-4S7">
+                            <rect key="frame" x="30" y="483" width="315" height="56"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="T46-Te-be6"/>
+                                <constraint firstAttribute="height" constant="56" id="bWk-Qj-zI2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="14"/>
+                            <state key="normal" title="LOGIN">
+                                <color key="titleColor" systemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="npd-We-AIA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTN-5P-6el">
+                            <rect key="frame" x="30" y="218" width="131" height="31"/>
+                            <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="16"/>
+                            <state key="normal" title="Forgot Password?">
+                                <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-ZE-VTN">
+                            <rect key="frame" x="30" y="20" width="380" height="188"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Gfp-P8-2rX">
+                                    <rect key="frame" x="0.0" y="0.0" width="380" height="84"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-5V-rY7">
+                                            <rect key="frame" x="0.0" y="0.0" width="73.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="16"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-c7-Fpf" customClass="DesignableUITextField" customModule="Ai_Detection" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="34" width="380" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="380" id="Dqy-40-Yvj"/>
+                                                <constraint firstAttribute="height" constant="50" id="EiG-Qa-weO"/>
+                                            </constraints>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ats-sG-6qs">
+                                    <rect key="frame" x="0.0" y="104" width="380" height="84"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO4-lj-mXd">
+                                            <rect key="frame" x="0.0" y="0.0" width="71" height="19"/>
+                                            <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="16"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-Qn-hY3" customClass="DesignableUITextField" customModule="Ai_Detection" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="34" width="380" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="380" id="WX4-gH-HfN"/>
+                                                <constraint firstAttribute="height" constant="50" id="epL-dR-10z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MavenProMedium" family="Maven Pro" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HSS-UT-4S7" secondAttribute="trailing" constant="20" symbolic="YES" id="6a0-i7-0qW"/>
+                        <constraint firstItem="W5L-ZE-VTN" firstAttribute="leading" secondItem="nD4-Gb-ujZ" secondAttribute="leading" constant="30" id="GCw-s3-i72"/>
+                        <constraint firstItem="dTN-5P-6el" firstAttribute="leading" secondItem="nD4-Gb-ujZ" secondAttribute="leading" constant="30" id="hY9-MD-8mJ"/>
+                        <constraint firstItem="HSS-UT-4S7" firstAttribute="leading" secondItem="nD4-Gb-ujZ" secondAttribute="leading" constant="30" id="nLn-Ex-GO2"/>
+                        <constraint firstAttribute="bottom" secondItem="HSS-UT-4S7" secondAttribute="bottom" constant="20" id="nNm-KV-0wL"/>
+                        <constraint firstItem="W5L-ZE-VTN" firstAttribute="top" secondItem="nD4-Gb-ujZ" secondAttribute="top" constant="20" id="qWb-5E-g5g"/>
+                        <constraint firstItem="dTN-5P-6el" firstAttribute="top" secondItem="W5L-ZE-VTN" secondAttribute="bottom" constant="10" id="vhX-tS-YGN"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dTN-5P-6el" secondAttribute="trailing" constant="20" symbolic="YES" id="vlX-IH-4IS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="5" height="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-gb-7gN">
+                    <rect key="frame" x="40" y="74" width="60" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Continue.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-Ok-C4j">
+                    <rect key="frame" x="40" y="153.5" width="222" height="30.5"/>
+                    <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jiA-IN-WkV">
+                    <rect key="frame" x="71" y="809" width="272.5" height="33"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeU-3V-tYR">
+                            <rect key="frame" x="0.0" y="0.0" width="46.5" height="33"/>
+                            <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="18"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-BV-RtO">
+                            <rect key="frame" x="52.5" y="0.0" width="64" height="33"/>
+                            <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="18"/>
+                            <state key="normal" title="Sign-up">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for a new account." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lng-Mb-ddI">
+                            <rect key="frame" x="122.5" y="0.0" width="150" height="33"/>
+                            <fontDescription key="fontDescription" name="MavenProRegular" family="Maven Pro" pointSize="18"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="17g-s1-vzm"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="17g-s1-vzm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PWJ-Ok-C4j" secondAttribute="trailing" symbolic="YES" id="5CH-DI-p8O"/>
+                <constraint firstItem="nD4-Gb-ujZ" firstAttribute="leading" secondItem="17g-s1-vzm" secondAttribute="leading" constant="40" id="8SJ-K5-V0U"/>
+                <constraint firstAttribute="trailing" secondItem="nD4-Gb-ujZ" secondAttribute="trailing" constant="-90" id="8Z0-Yf-cND"/>
+                <constraint firstItem="PWJ-Ok-C4j" firstAttribute="leading" secondItem="17g-s1-vzm" secondAttribute="leading" constant="40" id="Ed8-0i-icy"/>
+                <constraint firstItem="jiA-IN-WkV" firstAttribute="top" secondItem="nD4-Gb-ujZ" secondAttribute="bottom" constant="50" id="Kex-rB-K3a"/>
+                <constraint firstItem="zSR-gb-7gN" firstAttribute="leading" secondItem="17g-s1-vzm" secondAttribute="leading" constant="40" id="ZkB-bq-GDJ"/>
+                <constraint firstItem="jiA-IN-WkV" firstAttribute="centerX" secondItem="8xz-fj-C82" secondAttribute="centerX" id="aiQ-Wo-DD8"/>
+                <constraint firstItem="17g-s1-vzm" firstAttribute="bottom" secondItem="jiA-IN-WkV" secondAttribute="bottom" constant="20" id="iyA-ED-Ud8"/>
+                <constraint firstItem="nD4-Gb-ujZ" firstAttribute="top" secondItem="8xz-fj-C82" secondAttribute="top" constant="200" id="rXw-bP-Aww"/>
+                <constraint firstItem="zSR-gb-7gN" firstAttribute="top" secondItem="17g-s1-vzm" secondAttribute="top" constant="30" id="sLz-QC-aPM"/>
+                <constraint firstItem="nD4-Gb-ujZ" firstAttribute="top" secondItem="PWJ-Ok-C4j" secondAttribute="bottom" constant="16" id="znv-Qt-IQc"/>
+            </constraints>
+            <point key="canvasLocation" x="299" y="-175"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3Np-c7-Fpf">
+            <size key="intrinsicContentSize" width="5" height="20.5"/>
+        </designable>
+        <designable name="zSt-Qn-hY3">
+            <size key="intrinsicContentSize" width="5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Icon" width="60" height="60"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
