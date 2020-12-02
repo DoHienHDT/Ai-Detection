@@ -21,6 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Ai_Detection" customModuleProvider="target">
             <connections>
+                <outlet property="btnLogin" destination="HSS-UT-4S7" id="ioe-wu-3cv"/>
                 <outlet property="password" destination="zSt-Qn-hY3" id="GHG-vB-Wr5"/>
                 <outlet property="username" destination="3Np-c7-Fpf" id="qkY-sY-bF6"/>
                 <outlet property="view" destination="8xz-fj-C82" id="RIi-B3-gWi"/>
@@ -31,18 +32,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD4-Gb-ujZ" customClass="ShadowView" customModule="Login_Designs" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nD4-Gb-ujZ" customClass="ShadowView" customModule="Ai_Detection" customModuleProvider="target">
                     <rect key="frame" x="40" y="200" width="464" height="559"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-UT-4S7">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-UT-4S7" customClass="TKTransitionSubmitButton" customModule="Ai_Detection" customModuleProvider="target">
                             <rect key="frame" x="30" y="483" width="315" height="56"/>
                             <color key="backgroundColor" red="0.98823529409999999" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="T46-Te-be6"/>
                                 <constraint firstAttribute="height" constant="56" id="bWk-Qj-zI2"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="14"/>
-                            <state key="normal" title="LOGIN">
+                            <fontDescription key="fontDescription" name="MavenProBold" family="Maven Pro" pointSize="15"/>
+                            <state key="normal" title="Sign in">
                                 <color key="titleColor" systemColor="darkTextColor"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -205,6 +206,9 @@
     <designables>
         <designable name="3Np-c7-Fpf">
             <size key="intrinsicContentSize" width="5" height="20.5"/>
+        </designable>
+        <designable name="HSS-UT-4S7">
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
         <designable name="zSt-Qn-hY3">
             <size key="intrinsicContentSize" width="5" height="19"/>

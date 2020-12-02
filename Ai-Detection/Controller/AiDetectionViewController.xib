@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AiDetectionViewController" customModule="Ai_Detection" customModuleProvider="target">
+            <connections>
+                <outlet property="bbView" destination="FVy-kK-RlC" id="Kxa-0X-7ea"/>
+                <outlet property="loadingCameraButton" destination="0po-Tt-eLa" id="5MN-GW-XIt"/>
+                <outlet property="modelNameLabel" destination="hS0-sD-f7C" id="cLV-n6-9zY"/>
+                <outlet property="previewView" destination="Obm-6V-lmi" id="Za0-Su-xSV"/>
+                <outlet property="view" destination="EcR-X4-vFL" id="fV8-dj-ehV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EcR-X4-vFL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obm-6V-lmi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVy-kK-RlC" customClass="BoundingBoxView" customModule="Ai_Detection" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS0-sD-f7C">
+                    <rect key="frame" x="185.5" y="29.5" width="4.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0po-Tt-eLa" customClass="LoadingButton" customModule="MHLoadingButton">
+                    <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Zcw-ug-0Fu"/>
+                        <constraint firstAttribute="width" secondItem="0po-Tt-eLa" secondAttribute="height" multiplier="1:1" id="upP-lg-a4B"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIJ-6r-f3d">
+                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                    <state key="normal" image="imv_switch"/>
+                    <connections>
+                        <action selector="changeCameraButtonTapped:" destination="-1" eventType="touchUpInside" id="hus-Mm-tZh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEo-yE-cdN">
+                    <rect key="frame" x="283" y="20" width="72" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="VxT-3q-h6h"/>
+                        <constraint firstAttribute="height" constant="40" id="YiA-t3-ZrB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Change">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeAiDetectionButton:" destination="-1" eventType="touchUpInside" id="q1T-Lr-Qpr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="JdG-fC-2Lp"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0po-Tt-eLa" firstAttribute="centerX" secondItem="JdG-fC-2Lp" secondAttribute="centerX" id="42U-dj-ec2"/>
+                <constraint firstItem="FVy-kK-RlC" firstAttribute="top" secondItem="JdG-fC-2Lp" secondAttribute="top" id="7gk-n4-9BW"/>
+                <constraint firstItem="FVy-kK-RlC" firstAttribute="leading" secondItem="JdG-fC-2Lp" secondAttribute="leading" id="9hw-nB-uYU"/>
+                <constraint firstAttribute="trailing" secondItem="Obm-6V-lmi" secondAttribute="trailing" id="Afc-Um-HKU"/>
+                <constraint firstItem="0po-Tt-eLa" firstAttribute="centerY" secondItem="JdG-fC-2Lp" secondAttribute="centerY" id="C74-R1-1Bb"/>
+                <constraint firstItem="hS0-sD-f7C" firstAttribute="centerX" secondItem="EcR-X4-vFL" secondAttribute="centerX" id="LTJ-Zj-8eS"/>
+                <constraint firstItem="VEo-yE-cdN" firstAttribute="top" secondItem="JdG-fC-2Lp" secondAttribute="top" constant="20" id="Q3P-VR-lLf"/>
+                <constraint firstItem="JdG-fC-2Lp" firstAttribute="trailing" secondItem="VEo-yE-cdN" secondAttribute="trailing" constant="20" id="Uvk-bH-gw9"/>
+                <constraint firstAttribute="top" secondItem="Obm-6V-lmi" secondAttribute="top" id="Xvz-7a-w5b"/>
+                <constraint firstItem="hS0-sD-f7C" firstAttribute="centerY" secondItem="VEo-yE-cdN" secondAttribute="centerY" id="cnj-f2-JlP"/>
+                <constraint firstAttribute="bottom" secondItem="Obm-6V-lmi" secondAttribute="bottom" id="fUd-P6-NL5"/>
+                <constraint firstItem="KIJ-6r-f3d" firstAttribute="centerY" secondItem="VEo-yE-cdN" secondAttribute="centerY" id="ggO-F4-zbe"/>
+                <constraint firstItem="FVy-kK-RlC" firstAttribute="bottom" secondItem="JdG-fC-2Lp" secondAttribute="bottom" id="jso-fh-dOq"/>
+                <constraint firstItem="FVy-kK-RlC" firstAttribute="trailing" secondItem="JdG-fC-2Lp" secondAttribute="trailing" id="t53-Iw-Z2M"/>
+                <constraint firstItem="KIJ-6r-f3d" firstAttribute="leading" secondItem="EcR-X4-vFL" secondAttribute="leading" constant="20" id="xc3-LB-rRT"/>
+                <constraint firstItem="Obm-6V-lmi" firstAttribute="leading" secondItem="EcR-X4-vFL" secondAttribute="leading" id="zyu-Zm-OtG"/>
+            </constraints>
+            <point key="canvasLocation" x="-1102" y="-256"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0po-Tt-eLa">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="imv_switch" width="40" height="40"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

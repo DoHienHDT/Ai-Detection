@@ -14,7 +14,6 @@
 		2063658C25750000004BC95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2063658A25750000004BC95C /* LaunchScreen.storyboard */; };
 		230AAF2C2575099D0055B688 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AAF2A2575099D0055B688 /* SplashViewController.swift */; };
 		230AAF2D2575099D0055B688 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230AAF2B2575099D0055B688 /* SplashViewController.xib */; };
-		230AAF30257509C70055B688 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AAF2F257509C70055B688 /* BaseViewController.swift */; };
 		230AAF5325750E570055B688 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AAF5125750E560055B688 /* LoginViewController.swift */; };
 		230AAF5425750E570055B688 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 230AAF5225750E560055B688 /* LoginViewController.xib */; };
 		230AAF57257511230055B688 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AAF56257511230055B688 /* FormTextField.swift */; };
@@ -34,6 +33,21 @@
 		230AAF7D2575160A0055B688 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230AAF6F2575160A0055B688 /* RobotoSlab-Bold.ttf */; };
 		230AAF7E2575160A0055B688 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230AAF702575160A0055B688 /* NunitoSans-Regular.ttf */; };
 		230AAF7F2575160A0055B688 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 230AAF712575160A0055B688 /* MavenPro-Regular.ttf */; };
+		2330EC87257770DC00ACC5E9 /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330EC86257770DC00ACC5E9 /* VideoCameraType.swift */; };
+		2330EC8A257770EB00ACC5E9 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330EC89257770EB00ACC5E9 /* AVCaptureDevice+Extension.swift */; };
+		2330EC952577B0CE00ACC5E9 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330EC932577B0CE00ACC5E9 /* DemoViewController.swift */; };
+		2330EC962577B0CE00ACC5E9 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2330EC942577B0CE00ACC5E9 /* DemoViewController.xib */; };
+		2330ECAE2577B59D00ACC5E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330ECAD2577B59D00ACC5E9 /* BaseViewController.swift */; };
+		2330ED032577BD1300ACC5E9 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 2330ED022577BD1300ACC5E9 /* models */; };
+		23A7480F2575DC0B009376F1 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7480E2575DC0B009376F1 /* TransitionSubmitButton.swift */; };
+		23A748132575DC20009376F1 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A748122575DC20009376F1 /* SpinerLayer.swift */; };
+		23A748162575DC69009376F1 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A748152575DC69009376F1 /* FadeTransition.swift */; };
+		23A748192575DC77009376F1 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A748182575DC77009376F1 /* CGRectEx.swift */; };
+		23A7481C2575DC84009376F1 /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7481B2575DC84009376F1 /* TimerEx.swift */; };
+		23A748202575DCB3009376F1 /* AiDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7481E2575DCB2009376F1 /* AiDetectionViewController.swift */; };
+		23A748212575DCB3009376F1 /* AiDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A7481F2575DCB2009376F1 /* AiDetectionViewController.xib */; };
+		23A748292575DE2C009376F1 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A748282575DE2C009376F1 /* VideoCapture.swift */; };
+		23A748372575E8BD009376F1 /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A748362575E8BD009376F1 /* BoundingBoxView.swift */; };
 		3B697CF2FB9165DDCD34E752 /* Pods_Ai_Detection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA555C9DF7FB35D05DDBE74A /* Pods_Ai_Detection.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +62,6 @@
 		2063658D25750000004BC95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230AAF2A2575099D0055B688 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		230AAF2B2575099D0055B688 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		230AAF2F257509C70055B688 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		230AAF5125750E560055B688 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		230AAF5225750E560055B688 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		230AAF56257511230055B688 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
@@ -68,6 +81,21 @@
 		230AAF6F2575160A0055B688 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
 		230AAF702575160A0055B688 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		230AAF712575160A0055B688 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		2330EC86257770DC00ACC5E9 /* VideoCameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
+		2330EC89257770EB00ACC5E9 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		2330EC932577B0CE00ACC5E9 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		2330EC942577B0CE00ACC5E9 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		2330ECAD2577B59D00ACC5E9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2330ED022577BD1300ACC5E9 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = models; sourceTree = "<group>"; };
+		23A7480E2575DC0B009376F1 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
+		23A748122575DC20009376F1 /* SpinerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
+		23A748152575DC69009376F1 /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		23A748182575DC77009376F1 /* CGRectEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		23A7481B2575DC84009376F1 /* TimerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
+		23A7481E2575DCB2009376F1 /* AiDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiDetectionViewController.swift; sourceTree = "<group>"; };
+		23A7481F2575DCB2009376F1 /* AiDetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AiDetectionViewController.xib; sourceTree = "<group>"; };
+		23A748282575DE2C009376F1 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		23A748362575E8BD009376F1 /* BoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
 		57B93B757CE732AC79C66C9D /* Pods-Ai-Detection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ai-Detection.release.xcconfig"; path = "Target Support Files/Pods-Ai-Detection/Pods-Ai-Detection.release.xcconfig"; sourceTree = "<group>"; };
 		AA555C9DF7FB35D05DDBE74A /* Pods_Ai_Detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ai_Detection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,8 +133,9 @@
 		2063657E2574FFFE004BC95C /* Ai-Detection */ = {
 			isa = PBXGroup;
 			children = (
-				230AAF242575062B0055B688 /* View */,
+				2330EC722577488E00ACC5E9 /* models */,
 				230AAF23257506240055B688 /* Model */,
+				230AAF242575062B0055B688 /* View */,
 				230AAF21257505FD0055B688 /* Controller */,
 				2063657F2574FFFE004BC95C /* AppDelegate.swift */,
 				206365832574FFFE004BC95C /* ViewController.swift */,
@@ -121,11 +150,15 @@
 		230AAF21257505FD0055B688 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				230AAF2F257509C70055B688 /* BaseViewController.swift */,
+				2330ECAD2577B59D00ACC5E9 /* BaseViewController.swift */,
 				230AAF2A2575099D0055B688 /* SplashViewController.swift */,
 				230AAF2B2575099D0055B688 /* SplashViewController.xib */,
 				230AAF5125750E560055B688 /* LoginViewController.swift */,
 				230AAF5225750E560055B688 /* LoginViewController.xib */,
+				23A7481E2575DCB2009376F1 /* AiDetectionViewController.swift */,
+				23A7481F2575DCB2009376F1 /* AiDetectionViewController.xib */,
+				2330EC932577B0CE00ACC5E9 /* DemoViewController.swift */,
+				2330EC942577B0CE00ACC5E9 /* DemoViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,10 +166,13 @@
 		230AAF23257506240055B688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				23A748232575DE09009376F1 /* VideoCapture */,
+				23A7480D2575DBDD009376F1 /* CustomButtonLogin */,
 				230AAF63257515F70055B688 /* Fonts */,
 				230AAF56257511230055B688 /* FormTextField.swift */,
 				230AAF59257511390055B688 /* DesignableUITextField.swift */,
 				230AAF5C2575114A0055B688 /* ShadowView.swift */,
+				23A748362575E8BD009376F1 /* BoundingBoxView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +203,36 @@
 				230AAF6D2575160A0055B688 /* WorkSans-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2330EC722577488E00ACC5E9 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2330ED022577BD1300ACC5E9 /* models */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		23A7480D2575DBDD009376F1 /* CustomButtonLogin */ = {
+			isa = PBXGroup;
+			children = (
+				23A7480E2575DC0B009376F1 /* TransitionSubmitButton.swift */,
+				23A748122575DC20009376F1 /* SpinerLayer.swift */,
+				23A748152575DC69009376F1 /* FadeTransition.swift */,
+				23A748182575DC77009376F1 /* CGRectEx.swift */,
+				23A7481B2575DC84009376F1 /* TimerEx.swift */,
+			);
+			path = CustomButtonLogin;
+			sourceTree = "<group>";
+		};
+		23A748232575DE09009376F1 /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				23A748282575DE2C009376F1 /* VideoCapture.swift */,
+				2330EC86257770DC00ACC5E9 /* VideoCameraType.swift */,
+				2330EC89257770EB00ACC5E9 /* AVCaptureDevice+Extension.swift */,
+			);
+			path = VideoCapture;
 			sourceTree = "<group>";
 		};
 		5725536DDF657D2DC5124D0C /* Pods */ = {
@@ -255,9 +321,12 @@
 				230AAF7E2575160A0055B688 /* NunitoSans-Regular.ttf in Resources */,
 				230AAF772575160A0055B688 /* WorkSans-Bold.otf in Resources */,
 				2063658925750000004BC95C /* Assets.xcassets in Resources */,
+				23A748212575DCB3009376F1 /* AiDetectionViewController.xib in Resources */,
 				230AAF7F2575160A0055B688 /* MavenPro-Regular.ttf in Resources */,
+				2330ED032577BD1300ACC5E9 /* models in Resources */,
 				230AAF7A2575160A0055B688 /* OpenSans-Bold.ttf in Resources */,
 				230AAF752575160A0055B688 /* WorkSans-Black.otf in Resources */,
+				2330EC962577B0CE00ACC5E9 /* DemoViewController.xib in Resources */,
 				230AAF782575160A0055B688 /* RobotoSlab-Light.ttf in Resources */,
 				206365872574FFFE004BC95C /* Main.storyboard in Resources */,
 				230AAF2D2575099D0055B688 /* SplashViewController.xib in Resources */,
@@ -318,11 +387,22 @@
 			files = (
 				230AAF2C2575099D0055B688 /* SplashViewController.swift in Sources */,
 				230AAF57257511230055B688 /* FormTextField.swift in Sources */,
-				230AAF30257509C70055B688 /* BaseViewController.swift in Sources */,
+				23A748202575DCB3009376F1 /* AiDetectionViewController.swift in Sources */,
 				206365842574FFFE004BC95C /* ViewController.swift in Sources */,
+				2330ECAE2577B59D00ACC5E9 /* BaseViewController.swift in Sources */,
 				230AAF5D2575114A0055B688 /* ShadowView.swift in Sources */,
+				23A7480F2575DC0B009376F1 /* TransitionSubmitButton.swift in Sources */,
+				23A748372575E8BD009376F1 /* BoundingBoxView.swift in Sources */,
+				23A748162575DC69009376F1 /* FadeTransition.swift in Sources */,
+				2330EC8A257770EB00ACC5E9 /* AVCaptureDevice+Extension.swift in Sources */,
+				23A748292575DE2C009376F1 /* VideoCapture.swift in Sources */,
 				230AAF5A257511390055B688 /* DesignableUITextField.swift in Sources */,
 				230AAF5325750E570055B688 /* LoginViewController.swift in Sources */,
+				23A748132575DC20009376F1 /* SpinerLayer.swift in Sources */,
+				2330EC87257770DC00ACC5E9 /* VideoCameraType.swift in Sources */,
+				23A748192575DC77009376F1 /* CGRectEx.swift in Sources */,
+				23A7481C2575DC84009376F1 /* TimerEx.swift in Sources */,
+				2330EC952577B0CE00ACC5E9 /* DemoViewController.swift in Sources */,
 				206365802574FFFE004BC95C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TPJJNUR63;
 				INFOPLIST_FILE = "Ai-Detection/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,7 +575,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TPJJNUR63;
 				INFOPLIST_FILE = "Ai-Detection/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
